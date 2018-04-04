@@ -1,0 +1,27 @@
+ {
+   //JSON code with authetication details used on other python scripts to eecute the Bot
+ 	"token": "[replace with you Spark User token] ",
+	"code": 200,
+    "data": {
+        "username": "[spark_name]", //replace with your assigned Bot name
+        "password": "[bot token]", //replace with your Bot token
+        "database": "[your mongodb name]", //MongoDB name
+        //where your mongo servers are located
+        //consider the follwing as host samples urls
+        "mongoServers": [
+            {
+                "host": "bdb-dbaas-alln-1.cisco.com",
+                "port": 27000
+            },
+            {
+                "host": "bdb-dbaas-alln-1.cisco.com",
+                "port": 27001
+            },
+            {
+                "host": "bdb-dbaas-alln-2.cisco.com",
+                "port": 27000
+            }
+        ],
+        "replica": "bdb-dbaas"
+	 }
+ }
